@@ -1,0 +1,14 @@
+{
+  "name": "iss-autofetch",
+  "version": "1.0.0",
+  "description": "a simple tools for quick using ishadowsocks",
+  "main": "index.js",
+  "dependencies": {
+    "superagent": "^1.8.0-beta.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tojonozomi",
+  "license": "ISC"
+}
