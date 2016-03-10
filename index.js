@@ -1,6 +1,4 @@
 //quick use for ishadowsocks.com
-//import sa from 'superagent';
-//import cheerio from 'cheerio';
 var sa = require('superagent');
 var cheerio = require('cheerio');
 var fs = require('fs');
@@ -15,7 +13,6 @@ var fetchWeb = url => new Promise((resolve,reject) => {
 	});
 });
 var analyze = text =>{
-	//try{}catch{}
 	var $ = cheerio.load(text);
 	var result = {};
 	var resAddAttr = obj =>Object.assign(result,obj);
