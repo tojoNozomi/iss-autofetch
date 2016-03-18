@@ -11,6 +11,12 @@
 ###ps：
 仅支持windows平台
 
+最近ishadowsocks.com 有点不稳定。
+
+###更新：
+
+2016/3/18 修改网站域名
+
 
 
 
@@ -25,4 +31,10 @@
   
 ###PS:
  
-Just for windows
+Just for windows.
+
+ishadowsocks.com is unstable recently.
+
+### Update:
+
+2016/3/18 update the domain of the website.

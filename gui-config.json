@@ -1,9 +1,9 @@
 {
 "configs" : [
   {
-"server" : "jp3.iss.tf",
-"server_port" : 443,
-"password" : "89560160",
+"server" : "hk2.iss.tf",
+"server_port" : 8989,
+"password" : "22114651",
 "method" : "aes-256-cfb",
 "remarks" : ""}
 
