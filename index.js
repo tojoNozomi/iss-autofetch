@@ -1,4 +1,6 @@
 //quick use for ishadowsocks.com
+//github:  github.com/tojoNozomi
+//mail: nozomi1049@gmail.com
 var sa = require('superagent');
 var cheerio = require('cheerio');
 var fs = require('fs');
@@ -27,8 +29,8 @@ var analyze = text =>{
 };
 var writeConfig = configObj =>{
 	var changeConfig = (json,obj) =>{
-    	json.configs[0].server = String(obj.server);
-    	json.configs[0].server_port = Number(obj.server_port);
+//    	json.configs[0].server = String(obj.server);                         //网站在域名上有误，暂时设置为静态
+//    	json.configs[0].server_port = Number(obj.server_port);
     	json.configs[0].password = String(obj.password);   
     	return JSON.stringify(json);
 	};
@@ -38,7 +40,8 @@ var writeConfig = configObj =>{
 	});
 };
 
-fetchWeb('http://www.ishadowsocks.com/').then(analyze)
+fetchWeb('http://www.ishadowsocks.net/')                //网站域名变更
+.then(analyze)                       
 .then(writeConfig)
 .catch((err)=>{
 	console.log('err2');
